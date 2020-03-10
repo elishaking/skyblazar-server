@@ -1,0 +1,13 @@
+{
+  "name": "skyblazar-server",
+  "version": "1.0.0",
+  "description": "A collection of Skyblazar apps",
+  "main": "server.js",
+  "repository": "https://github.com/elishaking/skyblazar-server.git",
+  "author": "King Elisha <ek.chibueze@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.3"
+  }
+}
