@@ -1,9 +1,11 @@
 const express = require("express");
 const helmet = require("helmet");
+const allowCrossDomain = require("./utils/cors");
 
 const server = express();
 
 server.use(helmet());
+server.use(allowCrossDomain);
 
 const soccerVs = require("./routes/soccer-vs");
 server.use("/soccer-vs", soccerVs);
