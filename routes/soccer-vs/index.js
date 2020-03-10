@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const axios = require("axios").default;
 
-const url = "https://www.easports.com/fifa/ultimate-team";
+const url = "https://www.easports.com/fifa/ultimate-team/api/fut";
 
 router.get("/", (req, res) => {
   res.json({
@@ -9,9 +9,8 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("api/:name", (req, res) => {
+router.get("/api/:name", (req, res) => {
   const playerName = req.params.name;
-
   axios
     .get(`${url}/item?name=${playerName}`)
     .then(axiosRes => {
