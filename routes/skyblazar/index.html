@@ -1,103 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120544226-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120544226-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-120544226-1");
+    </script>
 
-    gtag('config', 'UA-120544226-1');
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Skyblazar - Software Services</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Skyblazar - Software Services</title>
+    <meta
+      name="description"
+      content="SkyBlazar incorporates modern software engineering techniques to deliver innovative and
+  futuristic software solutions to tackle major issues spanning several sectors. We are team of tenacious professionals with broad expertise in the (graphic) design and implementation of responsive/modern websites, mobile apps and desktop apps. Our dedicated engineering team can fluently integrate Artificial Intelligence(AI) into your app as needed, so you don't have to look elsewhere for a robust delivery."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://skyblazar.com" />
+    <meta
+      property="og:description"
+      content="SkyBlazar incorporates modern software engineering techniques to deliver innovative and
+  futuristic software solutions to tackle major issues spanning several sectors. We are team of tenacious professionals with broad expertise in the (graphic) design and implementation of responsive/modern websites, mobile apps and desktop apps. Our dedicated engineering team can fluently integrate Artificial Intelligence(AI) into your app as needed, so you don't have to look elsewhere for a robust delivery."
+    />
+    <meta
+      property="og:image"
+      content="https://skyblazar.com/images/logo-black.png"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:title"
+      content="SkyBlazar: UI/UX Design, Web/Mobile App Development, Hosting &amp; AI"
+    />
+    <meta name="author" content="King Elisha" />
+    <meta name="founder" content="King Elisha" />
 
-  <meta name="description"
-    content="SkyBlazar incorporates modern software engineering techniques to deliver innovative and
-  futuristic software solutions to tackle major issues spanning several sectors. We are team of tenacious professionals with broad expertise in the (graphic) design and implementation of responsive/modern websites, mobile apps and desktop apps. Our dedicated engineering team can fluently integrate Artificial Intelligence(AI) into your app as needed, so you don't have to look elsewhere for a robust delivery.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://skyblazar.com">
-  <meta property="og:description"
-    content="SkyBlazar incorporates modern software engineering techniques to deliver innovative and
-  futuristic software solutions to tackle major issues spanning several sectors. We are team of tenacious professionals with broad expertise in the (graphic) design and implementation of responsive/modern websites, mobile apps and desktop apps. Our dedicated engineering team can fluently integrate Artificial Intelligence(AI) into your app as needed, so you don't have to look elsewhere for a robust delivery.">
-  <meta property="og:image" content="https://skyblazar.com/images/logo-black.png">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="SkyBlazar: UI/UX Design, Web/Mobile App Development, Hosting &amp; AI">
-  <meta name="author" content="King Elisha">
-  <meta name="founder" content="King Elisha">
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/main.css">
+    <!-- @yield('edit-styles') -->
 
-  <!-- @yield('edit-styles') -->
+    <script src="js/pre-scripts.js"></script>
 
-  <script src="js/pre-scripts.js"></script>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+  </head>
 
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-  <link rel="icon" href="images/icon.png" type="image/x-icon">
-</head>
-
-<body id="top">
-  <!-- header
+  <body id="top">
+    <!-- header
       ================================================== -->
-  <header class="s-header">
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="">
+          <!-- <img src="images/logo.png" alt="Homepage"> -->
+          <h2
+            class="subhead"
+            style="width: -moz-fit-content; width: fit-content; display: flex; align-items: center;"
+          >
+            <img
+              style="height: 2.7em;"
+              src="images/logo-white.png"
+              alt="SKYBLAZAR"
+            />
+            &nbsp;&nbsp;
+            <span>Skyblazar</span>
+          </h2>
+        </a>
+      </div>
 
-    <div class="header-logo">
-      <a class="site-logo" href="">
-        <!-- <img src="images/logo.png" alt="Homepage"> -->
-        <h2 class="subhead" style="width: -moz-fit-content; width: fit-content; display: flex; align-items: center;">
-          <img style="height: 2.7em;" src="images/logo-white.png" alt="SKYBLAZAR"> &nbsp;&nbsp;
-          <span>Skyblazar</span>
-        </h2>
-      </a>
-    </div>
+      <nav class="header-nav">
+        <a href="#0" class="header-nav__close" title="close">
+          <span>Close</span>
+        </a>
 
-    <nav class="header-nav">
+        <div class="header-nav__content">
+          <h3>Navigation</h3>
 
-      <a href="#0" class="header-nav__close" title="close">
-        <span>Close</span>
-      </a>
-
-      <div class="header-nav__content">
-        <h3>Navigation</h3>
-
-        <ul class="header-nav__list">
-          <li class="current">
-            <a class="smoothscroll" href="#home" title="home">Home</a>
-          </li>
-          <li>
-            <a class="smoothscroll" href="#about" title="about">About</a>
-          </li>
-          <li>
-            <a class="smoothscroll" href="#services" title="services">Services</a>
-          </li>
-          <li>
-            <a class="smoothscroll" href="#works" title="works">Works</a>
-          </li>
-          <!-- <li>
+          <ul class="header-nav__list">
+            <li class="current">
+              <a class="smoothscroll" href="#home" title="home">Home</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#about" title="about">About</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#services" title="services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="smoothscroll" href="#works" title="works">Works</a>
+            </li>
+            <!-- <li>
             <a class="smoothscroll" href="#clients" title="clients">Clients</a>
           </li> -->
-          <li>
-            <a class="smoothscroll" href="#contact" title="contact">Contact</a>
-          </li>
-          <li>
-            <a href="/articles" title="articles">Articles</a>
-          </li>
-        </ul>
+            <li>
+              <a class="smoothscroll" href="#contact" title="contact"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="/articles" title="articles">Articles</a>
+            </li>
+          </ul>
 
-        <p>Hire us, let's enhance your capacity or your Organization to effectively get things done</p>
+          <p>
+            Hire us, let's enhance your capacity or your Organization to
+            effectively get things done
+          </p>
 
-        <ul class="header-nav__social">
-          <li>
-            <a href="https://web.facebook.com/skyblazar/">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <!-- <li>
+          <ul class="header-nav__social">
+            <li>
+              <a href="https://web.facebook.com/skyblazar/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <!-- <li>
             <a href="#">
               <i class="fa fa-twitter"></i>
             </a>
@@ -122,79 +149,78 @@
               <i class="fa fa-youtube"></i>
             </a>
           </li> -->
-        </ul>
+          </ul>
+        </div>
+        <!-- end header-nav__content -->
+      </nav>
+      <!-- end header-nav -->
 
-      </div>
-      <!-- end header-nav__content -->
+      <a class="header-menu-toggle" href="#0">
+        <span class="header-menu-text">Menu</span>
+        <span class="header-menu-icon"></span>
+      </a>
+    </header>
+    <!-- end s-header -->
 
-    </nav>
-    <!-- end header-nav -->
-
-    <a class="header-menu-toggle" href="#0">
-      <span class="header-menu-text">Menu</span>
-      <span class="header-menu-icon"></span>
-    </a>
-
-  </header>
-  <!-- end s-header -->
-
-  <!-- home
+    <!-- home
     ================================================== -->
-  <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/bg-2.png"
-    data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section
+      id="home"
+      class="s-home target-section"
+      data-parallax="scroll"
+      data-image-src="images/bg-2.png"
+      data-natural-width="3000"
+      data-natural-height="2000"
+      data-position-y="center"
+    >
+      <div class="overlay"></div>
+      <div class="shadow-overlay"></div>
 
-    <div class="overlay"></div>
-    <div class="shadow-overlay"></div>
+      <div class="home-content">
+        <div class="row home-content__main">
+          <!-- <h3>Welcome to SkyBlazar</h3> -->
+          <h3>Let us help you</h3>
 
-    <div class="home-content">
+          <h1>
+            Distinguish your
+            <br />
+            brand by building a <br />
+            unique and compelling <br />
+            digital presence.
+          </h1>
 
-      <div class="row home-content__main">
-
-
-        <!-- <h3>Welcome to SkyBlazar</h3> -->
-        <h3>Let us help you</h3>
-
-        <h1>
-          Distinguish your
-          <br> brand by building a
-          <br> unique and compelling
-          <br> digital presence.
-        </h1>
-
-        <div class="home-content__buttons">
-          <a href="#contact" class="smoothscroll btn btn--primary">
-            Start a Project
-          </a>
-          <!-- <a href="#about" class="smoothscroll btn btn--stroke">
+          <div class="home-content__buttons">
+            <a href="#contact" class="smoothscroll btn btn--primary">
+              Start a Project
+            </a>
+            <!-- <a href="#about" class="smoothscroll btn btn--stroke">
             More About Us
           </a> -->
+          </div>
         </div>
 
+        <div class="home-content__scroll">
+          <a href="#about" class="scroll-link smoothscroll">
+            <span>Scroll Down</span>
+          </a>
+        </div>
+
+        <div class="home-content__line"></div>
       </div>
 
-      <div class="home-content__scroll">
-        <a href="#about" class="scroll-link smoothscroll">
-          <span>Scroll Down</span>
-        </a>
-      </div>
+      <ul class="home-social">
+        <li>
+          <a href="https://web.facebook.com/skyblazar/">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span>Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
-      <div class="home-content__line"></div>
-    </div>
-
-    <ul class="home-social">
-      <li>
-        <a href="https://web.facebook.com/skyblazar/">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <span>Facebook</span>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-
-  <!-- about
+    <!-- about
   ================================================== -->
-  <!-- <section id='about' class="s-about">
+    <!-- <section id='about' class="s-about">
 
     <div class="row section-header has-bottom-sep" data-aos="fade-up">
       <div class="col-full">
@@ -222,260 +248,356 @@
 
   </section> -->
 
-  <section id='services' class="s-services">
-
-    <div class="row section-header" data-aos="fade-up">
-      <div class="col-full">
-        <h3 class="subhead">What We Do</h3>
-        <!-- <h3 class="h2">We’ve got everything you need to launch and grow your digital presence</h3> -->
+    <section id="services" class="s-services">
+      <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">What We Do</h3>
+          <!-- <h3 class="h2">We’ve got everything you need to launch and grow your digital presence</h3> -->
+        </div>
       </div>
-    </div>
 
-    <div class="row slides-full" data-aos="fade-up">
-      <div class="slides">
-        <div class="slides__slide">
-          <div>
-            <img src="images/website.svg" alt="Web Development" srcset="">
-            <div class="service-text">
-              <h3 class="h2">Web Development</h3>
-              <p>Your Hello to the internet. Let us help you create a unique and compelling Web Interface to make your
-                business
-                available and appealing to a broad array of prospective clients.</p>
+      <div class="row slides-full" data-aos="fade-up">
+        <div class="slides">
+          <div class="slides__slide">
+            <div>
+              <img src="images/website.svg" alt="Web Development" srcset="" />
+              <div class="service-text">
+                <h3 class="h2">Web Development</h3>
+                <p>
+                  Your Hello to the internet. Let us help you create a unique
+                  and compelling Web Interface to make your business available
+                  and appealing to a broad array of prospective clients.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slides__slide">
+            <div>
+              <img
+                src="images/mobile.svg"
+                alt="Mobile App Development"
+                srcset=""
+              />
+              <div class="service-text">
+                <h3 class="h2">Mobile App Development</h3>
+                <p>
+                  We can translate your business process into a functional and
+                  appealing mobile application integrated with the cloud.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slides__slide">
+            <div>
+              <img
+                src="images/desktop.svg"
+                alt="Desktop App Development"
+                srcset=""
+              />
+              <div class="service-text">
+                <h3 class="h2">Desktop App Development</h3>
+                <p>
+                  Sometimes, mobile apps just won't do it and you need a more
+                  advanced and featureful application to meet your user demands.
+                  We have been there and we can help you translate those big
+                  dreams to real apps with real impact.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slides__slide">
+            <div>
+              <img
+                src="images/ux-2.svg"
+                alt="UX Designs / Research"
+                srcset=""
+              />
+              <div class="service-text">
+                <h3 class="h2">UX Designs / Research</h3>
+                <p>
+                  For every product we create, UX Design / Research is a
+                  fundamental step. At the end of it, your users will not want
+                  to look elsewhere.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="slides__slide">
-          <div>
-            <img src="images/mobile.svg" alt="Mobile App Development" srcset="">
-            <div class="service-text">
-              <h3 class="h2">Mobile App Development</h3>
-              <p>We can translate your business process into a functional and appealing mobile application integrated
-                with the cloud.</p>
-            </div>
-          </div>
+    <section id="works" class="s-services" style="background: #faf3e9;">
+      <div
+        class="row section-header has-bottom-sep light-sep"
+        data-aos="fade-up"
+      >
+        <div class="col-full">
+          <h3 class="subhead">Recent Works</h3>
+          <h1 class="display-2">
+            We're great at what we do, check out some of our latest works
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-six tab-full s-article"
+          link="https://calcen.skyblazar.com"
+        >
+          <img
+            src="images/works/CalcEn.svg"
+            alt="CalcEn: Complex Calculator"
+            srcset=""
+          />
+          <a href="https://www.linkedin.com/in/elishaking" target="_blank">
+            <small><strong>Contributor:</strong> Elisha King Chibueze</small>
+          </a>
+          <a href="https://calcen.skyblazar.com">
+            <p><i class="icon-eye"></i> &nbsp; CalcEn: Complex Calculator</p>
+          </a>
         </div>
 
-        <div class="slides__slide">
-          <div>
-            <img src="images/desktop.svg" alt="Desktop App Development" srcset="">
-            <div class="service-text">
-              <h3 class="h2">Desktop App Development</h3>
-              <p>Sometimes, mobile apps just won't do it and you need a more advanced and featureful application to meet
-                your
-                user demands. We have been there and we can help you translate those big dreams to real apps with real
-                impact.
-              </p>
-            </div>
-          </div>
+        <div
+          class="col-six tab-full s-article"
+          link="https://alexeliza.skyblazar.com"
+        >
+          <img
+            src="images/works/Gracelites.svg"
+            alt="Gracelites International School"
+            srcset=""
+          />
+          <a href="https://www.linkedin.com/in/elishaking" target="_blank">
+            <small><strong>Contributor:</strong> Elisha King Chibueze</small>
+          </a>
+          <a href="https://gracelites.skyblazar.com">
+            <p>
+              <i class="icon-eye"></i> &nbsp; Gracelites International School
+            </p>
+          </a>
         </div>
 
-        <div class="slides__slide">
-          <div>
-            <img src="images/ux-2.svg" alt="UX Designs / Research" srcset="">
-            <div class="service-text">
-              <h3 class="h2">UX Designs / Research</h3>
-              <p>For every product we create, UX Design / Research is a fundamental step. At the end of it, your users
-                will
-                not want to look elsewhere.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id='works' class="s-services" style="background: #faf3e9;">
-    <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-      <div class="col-full">
-        <h3 class="subhead">Recent Works</h3>
-        <h1 class="display-2">We're great at what we do, check out some of our latest works</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-six tab-full s-article" link="https://calcen.skyblazar.com">
-        <img src="images/works/CalcEn.svg" alt="CalcEn: Complex Calculator" srcset="">
-        <a href="https://www.linkedin.com/in/elishaking" target="_blank">
-          <small><strong>Contributor:</strong> Elisha King Chibueze</small>
-        </a>
-        <a href="https://calcen.skyblazar.com">
-          <p><i class="icon-eye"></i> &nbsp; CalcEn: Complex Calculator</p>
-        </a>
-      </div>
-
-      <div class="col-six tab-full s-article" link="https://alexeliza.skyblazar.com">
-        <img src="images/works/Gracelites.svg" alt="Gracelites International School" srcset="">
-        <a href="https://www.linkedin.com/in/elishaking" target="_blank">
-          <small><strong>Contributor:</strong> Elisha King Chibueze</small>
-        </a>
-        <a href="https://gracelites.skyblazar.com">
-          <p><i class="icon-eye"></i> &nbsp; Gracelites International School</p>
-        </a>
-      </div>
-
-      <!-- <div class="col-six tab-full s-article" link="https://alexeliza.skyblazar.com">
+        <!-- <div class="col-six tab-full s-article" link="https://alexeliza.skyblazar.com">
         <img src="images/chioke@2x.png" alt="Alex and Eliza Foundation" srcset="">
         <a href="https://alexeliza.skyblazar.com">
           <p><i class="icon-eye"></i> &nbsp; Alex and Eliza Foundation</p>
         </a>
       </div> -->
-    </div>
-
-    <div class="row">
-      <div class="col-six tab-full s-article" link="https://dizt.skyblazar.com">
-        <img src="images/works/Dizt.svg" alt="Dizt: Navigation App" srcset="">
-        <a href="https://www.linkedin.com/in/elishaking" target="_blank">
-          <small><strong>Contributor:</strong> Elisha King Chibueze</small>
-        </a>
-        <a href="https://dizt.skyblazar.com">
-          <p><i class="icon-eye"></i> &nbsp; Dizt: Navigation App</p>
-        </a>
       </div>
 
-      <div class="col-six tab-full s-article" link="https://quotz.skyblazar.com">
-        <img src="images/works/Quotz.svg" alt="Quotz" srcset="">
-        <a href="https://www.linkedin.com/in/elishaking" target="_blank">
-          <small><strong>Contributor:</strong> Elisha King Chibueze</small>
-        </a>
-        <a href="https://quotz.skyblazar.com">
-          <p><i class="icon-eye"></i> &nbsp; Quotz</p>
-        </a>
-      </div>
+      <div class="row">
+        <div
+          class="col-six tab-full s-article"
+          link="https://dizt.skyblazar.com"
+        >
+          <img
+            src="images/works/Dizt.svg"
+            alt="Dizt: Navigation App"
+            srcset=""
+          />
+          <a href="https://www.linkedin.com/in/elishaking" target="_blank">
+            <small><strong>Contributor:</strong> Elisha King Chibueze</small>
+          </a>
+          <a href="https://dizt.skyblazar.com">
+            <p><i class="icon-eye"></i> &nbsp; Dizt: Navigation App</p>
+          </a>
+        </div>
 
-      <!-- <div class="col-six tab-full s-article" link="/articles">
+        <div
+          class="col-six tab-full s-article"
+          link="https://quotz.skyblazar.com"
+        >
+          <img src="images/works/Quotz.svg" alt="Quotz" srcset="" />
+          <a href="https://www.linkedin.com/in/elishaking" target="_blank">
+            <small><strong>Contributor:</strong> Elisha King Chibueze</small>
+          </a>
+          <a href="https://quotz.skyblazar.com">
+            <p><i class="icon-eye"></i> &nbsp; Quotz</p>
+          </a>
+        </div>
+
+        <!-- <div class="col-six tab-full s-article" link="/articles">
         <img src="images/squaredemy@2x.png" alt="Squaredemy: The Smartest way to learn" srcset="">
         <a href="/articles">
           <p><i class="icon-eye"></i> &nbsp; Squaredemy: The Smartest way to learn</p>
         </a>
       </div> -->
-    </div>
-  </section>
-
-  <section id="contact" class="s-contact">
-
-    <div class="overlay"></div>
-    <div class="contact__line"></div>
-
-    <div class="row section-header" data-aos="fade-up">
-      <div class="col-full">
-        <h3 class="subhead">Contact Us</h3>
-        <h1 class="display-2 display-2--light">Schedule a 15 minute call with a Software expert</h1>
       </div>
-    </div>
+    </section>
 
-    <div class="row contact-content" style="box-shadow: 0px 0px 70px 11px #212121;" data-aos="fade-up">
+    <section id="contact" class="s-contact">
+      <div class="overlay"></div>
+      <div class="contact__line"></div>
 
-      <div class="contact-primary">
+      <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+          <h3 class="subhead">Contact Us</h3>
+          <h1 class="display-2 display-2--light">Schedule a 15 minute call</h1>
+        </div>
+      </div>
 
-        <h3 class="h6">Tell us about your Project</h3>
+      <div
+        class="row contact-content"
+        style="box-shadow: 0px 0px 70px 11px #212121;"
+        data-aos="fade-up"
+      >
+        <div class="contact-primary">
+          <h3 class="h6">Tell us about your Project</h3>
 
-        <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-          <fieldset>
-            <div class="form-field">
-              <input name="contactName" type="text" id="contactName" placeholder="* Your Name" value="" minlength="2"
-                required="" aria-required="true" class="full-width">
-            </div>
+          <form
+            name="contactForm"
+            id="contactForm"
+            method="post"
+            action=""
+            novalidate="novalidate"
+          >
+            <fieldset>
+              <div class="form-field">
+                <input
+                  name="contactName"
+                  type="text"
+                  id="contactName"
+                  placeholder="* Your Name"
+                  value=""
+                  minlength="2"
+                  required=""
+                  aria-required="true"
+                  class="full-width"
+                />
+              </div>
 
-            <div class="form-field">
-              <input name="contactEmail" type="email" id="contactEmail" placeholder="* Your Email" value="" required=""
-                aria-required="true" class="full-width">
-            </div>
+              <div class="form-field">
+                <input
+                  name="contactEmail"
+                  type="email"
+                  id="contactEmail"
+                  placeholder="* Your Email"
+                  value=""
+                  required=""
+                  aria-required="true"
+                  class="full-width"
+                />
+              </div>
 
-            <div class="form-field">
-              <input name="contactTel" type="tel" id="contactTel" placeholder="* Your Phone Number" value=""
-                class="full-width">
-            </div>
+              <div class="form-field">
+                <input
+                  name="contactTel"
+                  type="tel"
+                  id="contactTel"
+                  placeholder="* Your Phone Number"
+                  value=""
+                  class="full-width"
+                />
+              </div>
 
-            <div class="form-field">
-              <input name="contactProjectTitle" type="text" id="contactProjectTitle"
-                placeholder="Project Title (optional)" value="" class="full-width">
-            </div>
+              <div class="form-field">
+                <input
+                  name="contactProjectTitle"
+                  type="text"
+                  id="contactProjectTitle"
+                  placeholder="Project Title (optional)"
+                  value=""
+                  class="full-width"
+                />
+              </div>
 
-            <div class="form-field">
-              <textarea name="contactProjectDescription" id="contactProjectDescription"
-                placeholder="Short Description of your Project (optional)" rows="3" cols="50"
-                class="full-width"></textarea>
-            </div>
+              <div class="form-field">
+                <textarea
+                  name="contactProjectDescription"
+                  id="contactProjectDescription"
+                  placeholder="Short Description of your Project (optional)"
+                  rows="3"
+                  cols="50"
+                  class="full-width"
+                ></textarea>
+              </div>
 
-            <div class="form-field">
-              <button class="full-width btn--primary">SCHEDULE A CALL</button>
-              <div class="submit-loader">
-                <div class="text-loader">Sending...</div>
-                <div class="s-loader">
-                  <div class="bounce1"></div>
-                  <div class="bounce2"></div>
-                  <div class="bounce3"></div>
+              <div class="form-field">
+                <button class="full-width btn--primary">SCHEDULE A CALL</button>
+                <div class="submit-loader">
+                  <div class="text-loader">Sending...</div>
+                  <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
                 </div>
               </div>
+            </fieldset>
+          </form>
+
+          <!-- contact-warning -->
+          <div class="message-warning">
+            Something went wrong. Please try again.
+          </div>
+
+          <!-- contact-success -->
+          <div class="message-success">
+            Your message was sent, we'll get back to you promptly!
+            <br />
+          </div>
+        </div>
+
+        <div class="contact-secondary">
+          <div class="contact-info">
+            <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+            <div class="cinfo">
+              <h5>Where to Find Us</h5>
+              <p>
+                Plot 255 Kugbo Mechanic
+                <br />
+                Kugbo, Abuja FCT <br />
+                900103 Nigeria
+              </p>
             </div>
-          </fieldset>
-        </form>
 
-        <!-- contact-warning -->
-        <div class="message-warning">
-          Something went wrong. Please try again.
-        </div>
+            <div class="cinfo">
+              <h5>Email Us At</h5>
+              <p>
+                king.elisha@skyblazar.com
+              </p>
+            </div>
 
-        <!-- contact-success -->
-        <div class="message-success">
-          Your message was sent, we'll get back to you promptly!
-          <br>
-        </div>
-      </div>
+            <div class="cinfo">
+              <h5>Call Us At</h5>
+              <p>
+                Phone: (+234) 811 934 0144
+              </p>
+            </div>
 
-      <div class="contact-secondary">
-        <div class="contact-info">
-          <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
-
-          <div class="cinfo">
-            <h5>Where to Find Us</h5>
-            <p>
-              Plot 255 Kugbo Mechanic
-              <br> Kugbo, Abuja FCT
-              <br> 900103 Nigeria
-            </p>
+            <ul class="contact-social">
+              <li>
+                <a href="https://web.facebook.com/skyblazar/">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <div class="cinfo">
-            <h5>Email Us At</h5>
-            <p>
-              king.elisha@skyblazar.com
-            </p>
-          </div>
-
-          <div class="cinfo">
-            <h5>Call Us At</h5>
-            <p>
-              Phone: (+234) 811 934 0144
-            </p>
-          </div>
-
-          <ul class="contact-social">
-            <li>
-              <a href="https://web.facebook.com/skyblazar/">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footer
+    <!-- footer
           ================================================== -->
-  <footer>
-    <div class="row footer-main">
-      <div class="col-six tab-full left footer-desc">
-        <!-- <div class="footer-logo"></div> -->
-        <h2 class="subhead" style="width: -moz-fit-content; width: fit-content; margin-top: -9px;">SkyBlazar</h2>
-        Enhancing the capacity of every Organization and Individual to be more effective
-      </div>
+    <footer>
+      <div class="row footer-main">
+        <div class="col-six tab-full left footer-desc">
+          <!-- <div class="footer-logo"></div> -->
+          <h2
+            class="subhead"
+            style="width: -moz-fit-content; width: fit-content; margin-top: -9px;"
+          >
+            SkyBlazar
+          </h2>
+          Enhancing the capacity of every Organization and Individual to be more
+          effective
+        </div>
 
-      <div class="col-six tab-full right footer-subscribe">
-        <!-- <h4>Get Notified</h4>
+        <div class="col-six tab-full right footer-subscribe">
+          <!-- <h4>Get Notified</h4>
         <p>Stay updated with our latest news and events.</p>
 
         <div class="subscribe-form">
@@ -486,82 +608,101 @@
             <label for="mc-email" class="subscribe-message"></label>
           </form>
         </div> -->
-        <h2 class="subhead">We're always here for you</h2>
-      </div>
-    </div>
-
-    <div class="row footer-bottom">
-      <div class="col-twelve">
-        <div class="copyright">
-          <span>© Copyright SkyBlazar 2018</span>
-        </div>
-
-        <div class="go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top">
-            <i class="icon-arrow-up" aria-hidden="true"></i>
-          </a>
+          <h2 class="subhead">We're always here for you</h2>
         </div>
       </div>
-    </div>
-  </footer>
 
-  <!-- photoswipe background
+      <div class="row footer-bottom">
+        <div class="col-twelve">
+          <div class="copyright">
+            <span>© Copyright SkyBlazar 2018</span>
+          </div>
+
+          <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+              <i class="icon-arrow-up" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- photoswipe background
           ================================================== -->
-  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-    <div class="pswp__bg"></div>
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
 
-    <div class="pswp__scroll-wrap">
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
 
-      <div class="pswp__ui pswp__ui--hidden">
-        <div class="pswp__top-bar">
-          <div class="pswp__counter"></div>
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- preloader
+    <!-- preloader
           ================================================== -->
-  <div id="preloader">
-    <div id="loader">
-      <div class="line-scale-pulse-out">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div id="preloader">
+      <div id="loader">
+        <div class="line-scale-pulse-out">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Java Script
+    <!-- Java Script
           ================================================== -->
-  <script src="js/app.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
