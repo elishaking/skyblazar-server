@@ -9,7 +9,6 @@ const path = require("path");
  * @param {*} route
  */
 function serveStatic(req, res, next, route) {
-  console.log("sending");
   if (checkFile(req.originalUrl))
     res.sendFile(
       path.join(
