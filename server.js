@@ -7,7 +7,10 @@ const server = express();
 server.use(helmet());
 server.use(allowCrossDomain);
 
+const skyblazar = require("./routes/skyblazar");
 const soccerVs = require("./routes/soccer-vs");
+
+server.use("/", skyblazar);
 server.use("/soccer-vs", soccerVs);
 
 server.get("*", (_, res) => {
