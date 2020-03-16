@@ -7,7 +7,11 @@ const { serveStatic } = require("./utils/static");
 const server = express();
 
 server.use(helmet());
+server.use(express.urlencoded({ extended: false }));
+server.use(express.json());
+
 server.use(allowCrossDomain);
+
 server.all("*", (req, res, next) => {
   console.log(`${req.method}: ${req.originalUrl}`);
   next();
