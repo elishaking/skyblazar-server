@@ -15,7 +15,7 @@ const { sendProjectEmail } = require("./email");
 // });
 
 router.post("/project", (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   sendProjectEmail(req.body).then(sent => {
     if (sent) return res.json({ success: true });
 
