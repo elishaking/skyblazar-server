@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-const env = require("../../env.config");
+const env = require("../../env.config") || undefined;
 
 /** @param {{name: string, email: string, phone: string, title: string,  description: string,}} details*/
 const sendProjectEmail = async details => {
