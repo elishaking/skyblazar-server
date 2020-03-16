@@ -8,6 +8,10 @@ const server = express();
 
 server.use(helmet());
 server.use(allowCrossDomain);
+server.all("*", (req, res, next) => {
+  console.log(`${req.method}: ${req.originalUrl}`);
+  next();
+});
 
 // Serve static files
 server.use("/", (req, res, next) => serveStatic(req, res, next, "skyblazar"));
@@ -24,4 +28,6 @@ server.get("*", (_, res) => {
   });
 });
 
-server.listen(process.env.PORT || 4000);
+server.listen(process.env.PORT || 4000, () =>
+  console.log(`Server listening on port: ${process.env.PORT || 4000}`)
+);
