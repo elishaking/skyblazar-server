@@ -23,7 +23,7 @@ const sendProjectEmail = async details => {
   // let testAccount = await nodemailer.createTestAccount();
   const emailAccount = {
     user: process.env.MAIL_ADDRESS || env.MAIL_ADDRESS,
-    password: process.env.PROJECT_EMAIL_PASSWORD || env.MAIL_PASSWORD
+    password: process.env.MAIL_PASSWORD || env.MAIL_PASSWORD
   };
 
   // create reusable transporter object using the default SMTP transport
