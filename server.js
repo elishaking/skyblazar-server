@@ -23,8 +23,8 @@ server.use("/", (req, res, next) => serveStatic(req, res, next, "skyblazar"));
 const skyblazar = require("./routes/skyblazar");
 const soccerVs = require("./routes/soccer-vs");
 
-server.use("/", skyblazar);
 server.use("/soccer-vs", soccerVs);
+server.use("/", skyblazar);
 
 server.get("*", (_, res) => {
   res.status(404).json({
